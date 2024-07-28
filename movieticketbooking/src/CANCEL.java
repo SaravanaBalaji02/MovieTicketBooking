@@ -21,7 +21,7 @@ public class CANCEL extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 204)));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); 
         jLabel1.setForeground(new java.awt.Color(0, 0, 51));
         jLabel1.setText("YOUR BOOKING IS CANCELLED");
 
@@ -44,7 +44,7 @@ public class CANCEL extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 0, 204)));
 
-        jLabel2.setFont(new java.awt.Font("Algerian", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Algerian", 1, 24)); 
         jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("PLEASE  VIST AGAIN");
 
