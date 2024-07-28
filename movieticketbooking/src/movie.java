@@ -4,15 +4,13 @@ import java.sql.DriverManager;
 
 public class movie extends javax.swing.JFrame {
 
-    /**
-     * Creates new form movie
-     */
+ 
     public movie() {
         initComponents();
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+  
     private void initComponents() {
 
         jLabel6 = new javax.swing.JLabel();
@@ -32,24 +30,24 @@ public class movie extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MOVIE DETAILS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Algerian", 1, 36), new java.awt.Color(0, 204, 204))); // NOI18N
-        jPanel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jPanel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); 
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jLabel1.setText("SELECT MOVIE:");
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jLabel2.setText("SELECT  THEATRE:");
 
-        jComboBox1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Robo 2", "sahoo", "arvandi sametha" }));
 
-        jComboBox2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jComboBox2.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "srivishnu", "galaxy", "asscars", "PVR" }));
 
-        jComboBox3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jComboBox3.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "7:00AM", "11:00AM", "2:00PM", "6:00PM", "9:00PM" }));
 
-        jComboBox4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jComboBox4.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "11-11-2018", "12-11-2018", "10-11-2018", "09-11-2018" }));
         jComboBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,15 +55,15 @@ public class movie extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jLabel5.setText("SELECT DATE:");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jLabel3.setText("SELECT TIME:");
 
-        jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
 
-        jButton1.setFont(new java.awt.Font("Algerian", 1, 24)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Algerian", 1, 24)); 
         jButton1.setText("SUBMIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +71,7 @@ public class movie extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
         jLabel4.setText("NO OF TICKETS:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -162,9 +160,9 @@ public class movie extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
        
         workWithDatabase();
     }
@@ -183,12 +181,12 @@ public class movie extends javax.swing.JFrame {
          ResultSet rs=null;
          int flag=0;
      
-        //if(!a.equals(""))
+
          String N=jTextField1.getText();
         int N1=Integer.parseInt(N);
         int N2=N1;
          N1*=100;
-       //new recepit(a,b,e,d,N1,f).setVisible(true);
+   
         
       if(N2<10 && N2>0)
         
@@ -217,20 +215,17 @@ public class movie extends javax.swing.JFrame {
      
      s.executeUpdate("Update table3 set tickets="+id2+" where theatre="+"'"+q1+"'"+" and shows="+"'"+q2+"'");
     }
-    //new recepit(a,b,e,d).setVisible(true);
+ 
        while(rs.next())
        {
                String tickets1=rs.getString("tickets");
                String q3 = tickets1;
                
-               //jLabel5 = new javax.swing.JLabel("tickets available:"+"  "+q3);
-               
+              
          }
               
      
-      //rs.close;
-      //s.close;
-      //c.close;
+ 
    }    
          catch(SQLException | ClassNotFoundException e1)
          {
@@ -242,23 +237,14 @@ public class movie extends javax.swing.JFrame {
         
             
          }
-             
-// TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
     private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox4ActionPerformed
+    }
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+     
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -275,9 +261,7 @@ public class movie extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(movie.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+     
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new movie().setVisible(true);
@@ -285,7 +269,7 @@ public class movie extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -299,5 +283,5 @@ public class movie extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
-    // End of variables declaration//GEN-END:variables
+   
 }
